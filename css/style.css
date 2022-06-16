@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --main-blue: #0749f0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -68,7 +73,7 @@ html {
   width: 180px;
   padding: 12px;
   background: white;
-  color: darkblue;
+  color: var(--main-blue);
   border: none;
   border-radius: 30px;
   position: relative;
@@ -84,7 +89,7 @@ html {
 .sec2_home h1 {
   text-align: center;
   font-weight: bold;
-  color: darkblue;
+  color: var(--main-blue);
   margin-bottom: 40px;
 }
 
@@ -134,7 +139,7 @@ html {
 .sec3_home h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: darkblue;
+  color: var(--main-blue);
   font-weight: bold;
 }
 
@@ -155,7 +160,7 @@ html {
 
 .sec3_home_inner_txt_container h3 {
   font-weight: bold;
-  color: darkblue;
+  color: var(--main-blue);
   margin-bottom: 5px;
 }
 
@@ -181,7 +186,7 @@ html {
   margin-right: 15px;
   padding: 10px;
   width: 150px;
-  background: darkblue;
+  background: var(--main-blue);
   color: white;
   border: none;
   border-radius: 30px;
@@ -192,8 +197,8 @@ html {
   padding: 10px;
   width: 150px;
   background: transparent;
-  color: darkblue;
-  border: 1px solid darkblue;
+  color: var(--main-blue);
+  border: 1px solid var(--main-blue);
   border-radius: 30px;
   font-size: 15px;
 }
@@ -202,7 +207,7 @@ html {
   display: block;
   margin-bottom: 15px;
   color: white;
-  background: darkblue;
+  background: var(--main-blue);
   border-radius: 30px;
   padding: 3px 0px;
   max-width: 60px;
@@ -222,7 +227,7 @@ html {
   margin-bottom: 45px;
   text-align: center;
   font-weight: bold;
-  color: darkblue;
+  color: var(--main-blue);
 }
 
 .sec2_prod_pkg_grid_ele {
@@ -245,7 +250,7 @@ html {
 
 .sec2_prod_pkg_grid_inner:hover,
 .sec2_prod_pkg_grid_inner:focus {
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 12px (0, 0, 0, 0.25);
 }
 
 .pkg_name {
@@ -281,7 +286,7 @@ html {
 
 .pkg_price_h1 {
   text-align: center;
-  color: darkblue;
+  color: black;
   margin-bottom: 30px;
   font-weight: bold;
 }

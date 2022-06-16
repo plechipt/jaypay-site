@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --main-blue: #0749f0;
+}
+
 body {
   overflow-x: hidden;
   /* font-family: 'Montserrat', sans-serif; */
@@ -17,8 +22,17 @@ textarea {
 }
 
 button:hover {
-  background-color: #21252e;
+  background-color: darkblue;
   color: white;
+}
+
+.visit_btn:hover {
+  background-color: var(--main-blue);
+}
+
+.send_btn:hover {
+  background-color: white;
+  color: black;
 }
 
 a:hover {
@@ -195,7 +209,7 @@ p {
   width: 120px;
   padding: 8px 0px;
   font-size: 12px;
-  background-color: darkblue;
+  background-color: #0749f0;
   border: none;
   border-radius: 9px;
   color: white;
