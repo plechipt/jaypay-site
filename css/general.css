@@ -26,10 +26,6 @@ button:hover {
   color: white;
 }
 
-.get_started_btn:hover {
-  color: black;
-}
-
 .visit_btn:hover {
   background-color: var(--main-blue);
 }

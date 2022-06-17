@@ -73,7 +73,7 @@ html {
   width: 180px;
   padding: 12px;
   background: white;
-  color: var(var(--main-blue)-blue);
+  color: var(--main-blue);
   border: none;
   border-radius: 30px;
   position: relative;
@@ -89,7 +89,7 @@ html {
 .sec2_home h1 {
   text-align: center;
   font-weight: bold;
-  color: var(var(--main-blue)-blue);
+  color: var(--main-blue);
   margin-bottom: 40px;
 }
 
