@@ -446,6 +446,16 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  .sec3_home_img_container,
+  .sec3_home_inner_txt_container {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+  }
+  .proj_date {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
   footer {
     display: flex !important;
     justify-content: space-between !important;
