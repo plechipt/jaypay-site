@@ -262,7 +262,7 @@ html {
   margin-bottom: 0px;
 }
 
-#tryangle_svg {
+.tryangle_svg {
   display: block;
   margin: auto;
   transform: translateY(-1px);
