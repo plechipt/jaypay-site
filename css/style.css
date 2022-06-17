@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.genral_padding {
+.general_padding {
   width: 100%;
   overflow-x: hidden;
   padding-left: 60px;
@@ -432,21 +432,25 @@ footer {
 }
 
 @media screen and (min-width: 1700px) {
-  .genral_padding {
+  .general_padding {
     padding-left: 22%;
     padding-right: 22%;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .genral_padding {
+  .general_padding {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .genral_padding {
+  footer {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .general_padding {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -485,5 +489,12 @@ footer {
   .footer_icons_container img {
     margin-left: 10px;
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  footer {
+    display: flex !important;
+    justify-content: center !important;
   }
 }
