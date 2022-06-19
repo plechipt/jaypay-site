@@ -114,9 +114,15 @@ p {
   background-color: white;
 }
 
-.desktop_header {
-  position: relative;
-  z-index: 2;
+.desktop_header,
+.mobile_header {
+  background-color: white;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  z-index: 3;
 }
 
 /*<!-------------------------------------------------Logo------------------------------------------------------->*/
@@ -173,7 +179,7 @@ p {
   height: 3px;
   width: 100%;
   display: block;
-  animation: nav_after_animation 0.5s;
+  animation: nav_after_animation 0.4s;
   border-radius: 10px !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -337,7 +343,8 @@ p {
   text-transform: uppercase;
 }
 
-.nav_li_siderbar a:hover {
+.nav_li_siderbar a:hover,
+.nav_li a:hover::after {
   font-weight: 700;
 }
 
