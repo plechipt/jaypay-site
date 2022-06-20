@@ -418,6 +418,10 @@ footer {
   color: white !important;
 }
 
+.footer_icons_container a i:hover {
+  color: black !important;
+}
+
 .footer_icons_container {
   display: flex;
 }
