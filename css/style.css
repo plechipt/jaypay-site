@@ -409,21 +409,27 @@ footer {
   align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: rgba(0, 0, 255, 0.2);
+  background-color: #3195ff;
+}
+
+.copyright,
+.footer_icons_container a i {
+  font-size: 2em;
+  color: white !important;
 }
 
 .footer_icons_container {
   display: flex;
 }
 
-.footer_icons_container img {
-  margin-right: 15px;
+.footer_icons_container a i {
+  margin-right: 27px;
   width: 24px;
 }
 
 .copyright {
   margin-bottom: 0px;
-  font-size: 12px;
+  font-size: 15px;
   color: black;
 }
 
