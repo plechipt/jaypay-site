@@ -107,6 +107,7 @@ p {
 
 .header_section {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 5px 45px 5px 45px;
   width: 100%;
@@ -141,10 +142,6 @@ p {
 /*<!-------------------------------------------------Logo Ends------------------------------------------------------->*/
 
 /*<!-------------------------------------------------Links------------------------------------------------------->*/
-
-.link_container {
-  width: 60%;
-}
 
 .nav_ul {
   display: flex;
@@ -218,13 +215,10 @@ p {
 
 .get_start_btn {
   margin-right: 3em;
-  width: 120px;
+  width: 120px !important;
   padding: 8px 5px;
   font-size: 13px;
   border-radius: 9px;
-}
-
-.get_start_btn {
   background-color: #0749f0;
   border: none;
   color: white;
@@ -325,7 +319,8 @@ p {
   margin-top: 30px;
 }
 
-.nav_li_siderbar {
+.nav_li_siderbar,
+.nav_lang_sidebar {
   text-decoration: none;
   font-size: 17px;
   color: #21252e;
@@ -335,8 +330,11 @@ p {
   padding: 15px 20px;
   /*text-align: center;*/
   font-weight: 500;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   /*margin-bottom: 10px;*/
+}
+
+.nav_li_siderbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .nav_li_siderbar a {

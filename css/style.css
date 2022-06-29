@@ -499,7 +499,6 @@ footer {
     justify-content: center;
   }
   footer > p {
-    margin-top: 15px;
     text-align: center;
   }
   .footer_icons_container img {
@@ -508,9 +507,12 @@ footer {
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 486px) {
   footer {
     display: flex !important;
     justify-content: center !important;
+  }
+  footer > p {
+    margin-top: 0.75em;
   }
 }
