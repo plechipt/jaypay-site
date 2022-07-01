@@ -255,8 +255,9 @@ html {
 
 .pkg_name {
   width: 100%;
+  margin-top: -1em;
   padding: 30px 15px;
-  color: white;
+  color: white !important;
   background: #21252e;
   text-align: center;
   margin-bottom: 0px;
@@ -286,7 +287,7 @@ html {
 
 .pkg_price_h1 {
   text-align: center;
-  color: black;
+  color: black !important;
   margin-bottom: 30px;
   font-weight: bold;
 }
