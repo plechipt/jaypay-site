@@ -81,6 +81,10 @@ html {
   box-shadow: rgba(0, 0, 255, 0.4) 0px 0px 15px;
 }
 
+.sec1_home button a {
+  text-decoration: none;
+}
+
 .sec2_home h2 {
   text-align: center;
   font-weight: bold;
