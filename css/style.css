@@ -21,7 +21,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(../images/main-background.jpg);
+  background: url(../images/main-background.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -312,7 +312,7 @@ html {
 .sec5_home {
   padding-top: 80px;
   padding-bottom: 80px;
-  background: url(../images/contact-background.jpg);
+  background: url(../images/contact-background.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
