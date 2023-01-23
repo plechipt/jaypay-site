@@ -69,7 +69,7 @@
 }
 
 .us:before {
-  background-image: url(https://countryflagsapi.com/svg/us);
+  background-image: url("../images/us.svg");
   vertical-align: middle;
 }
 
