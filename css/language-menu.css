@@ -68,6 +68,11 @@
   background-repeat: no-repeat;
 }
 
+.cz {
+  background-image: url("../images/cz.svg");
+  vertical-align: middle;
+}
+
 .us:before {
   background-image: url("../images/us.svg");
   vertical-align: middle;
