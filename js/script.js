@@ -1,3 +1,4 @@
+// Sidebar
 const openNav = () => {
   document.getElementById("mySidebar").style.left = "0px";
   document.getElementById("sidebar_container_blur_bg").style.right = "-5vw";
@@ -23,6 +24,7 @@ const removeShadow = () => {
   element.classList.remove("box_s");
 };
 
+// Slide
 $(".sec2_home_slider").slick({
   infinite: true,
   slidesToShow: 3,

@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.aos-element {
+  opacity: 1;
+}
+
 .general_padding {
   width: 100%;
   overflow-x: hidden;
@@ -48,7 +52,6 @@ html {
   z-index: 2;
   text-align: center;
   margin-bottom: 10px;
-  text-shadow: 0px 0px 6px rgba(0, 0, 255, 0.7);
 }
 
 .sec1_home p {
@@ -61,7 +64,6 @@ html {
   font-weight: 300;
   font-size: 18px;
   margin-bottom: 20px;
-  text-shadow: 0px 0px 4px rgba(0, 0, 255, 0.7);
 }
 
 .sec1_home p a {
@@ -73,12 +75,10 @@ html {
   width: 180px;
   padding: 12px;
   background: white;
-  color: var(--main-blue);
   border: none;
   border-radius: 30px;
   position: relative;
   z-index: 2;
-  box-shadow: rgba(0, 0, 255, 0.4) 0px 0px 15px;
 }
 
 .sec1_home button a {
@@ -426,6 +426,7 @@ footer {
 .footer_icons_container a i {
   font-size: 2em;
   color: white !important;
+  transition: 0.4s;
 }
 
 .footer_icons_container a i:hover {

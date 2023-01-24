@@ -12,6 +12,10 @@
     <title>Bussines Site</title>
     <meta name="description" content="" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Slick -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -23,12 +27,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
     />
 
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -195,556 +202,586 @@
       </div>
     </header>
 
-    <div class="sec1_home general_padding">
-      <h1>WEB APP DEVELOPMENT</h1>
-      <p>
-        Specializing in custom theme development. If you're a business seeking a
-        web presence or are looking to hire
-      </p>
-      <button class="get_started_btn" onclick="location.href='#contact'">
-        Contact Us
-      </button>
-    </div>
-
-    <div class="sec2_home general_padding" id="services">
-      <h2>OUR SERVICES</h2>
-
-      <div class="sec2_home_slider">
-        <div class="sec2_home_slider_inner">
-          <img src="images/audit.png" alt="Audit logo" />
-          <h6>WEBSITE AUDITS</h6>
+    <main>
+      <div class="sec1_home general_padding">
+        <div
+          class="home-container aos-element"
+          data-aos="fade-in"
+          data-aos-duration="4000"
+        >
+          <h1>WEB APP DEVELOPMENT</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            condimentum sodales aliquam.
+            Specializing in custom theme development. If you're a business
+            seeking a web presence or are looking to hire
           </p>
-        </div>
-        <div class="sec2_home_slider_inner">
-          <img src="images/content.png" alt="Content Management logo" />
-          <h6>Content Management</h6>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            condimentum sodales aliquam.
-          </p>
-        </div>
-        <div class="sec2_home_slider_inner">
-          <img
-            src="images/design-and-dev.png"
-            alt="Design & Developemnt logo"
-          />
-          <h6>Design & Developemnt</h6>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            condimentum sodales aliquam.
-          </p>
-        </div>
-        <div class="sec2_home_slider_inner">
-          <img src="images/ecommerce.png" alt="Ecommerce logo" />
-          <h6>Ecommerce</h6>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            condimentum sodales aliquam.
-          </p>
+          <button class="get_started_btn" onclick="location.href='#contact'">
+            Contact Us
+          </button>
         </div>
       </div>
-    </div>
 
-    <div class="sec3_home" id="portfolio">
-      <h2>PORTFOLIO</h2>
-      <div class="sec3_home_inner_flx">
-        <div class="sec3_home_img_container">
-          <img alt="Porftolio item 1" src="./images/todo-project.webp" />
-        </div>
-        <div class="sec3_home_inner_txt_container">
-          <h3>Todo List</h3>
-          <span class="proj_date">2018</span>
-          <p>Simple Todo app</p>
-          <div class="sec3_home_btn_container">
-            <button
-              class="visit_btn"
-              onclick="javascript:window.open('https://awesome-todoapp.herokuapp.com', '_blank');"
-            >
-              Visit Site
-            </button>
+      <div class="sec2_home general_padding" id="services">
+        <h2>OUR SERVICES</h2>
+
+        <div class="sec2_home_slider">
+          <div class="sec2_home_slider_inner">
+            <img src="images/audit.png" alt="Audit logo" />
+            <h6>WEBSITE AUDITS</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              condimentum sodales aliquam.
+            </p>
+          </div>
+          <div class="sec2_home_slider_inner">
+            <img src="images/content.png" alt="Content Management logo" />
+            <h6>Content Management</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              condimentum sodales aliquam.
+            </p>
+          </div>
+          <div class="sec2_home_slider_inner">
+            <img
+              src="images/design-and-dev.png"
+              alt="Design & Developemnt logo"
+            />
+            <h6>Design & Developemnt</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              condimentum sodales aliquam.
+            </p>
+          </div>
+          <div class="sec2_home_slider_inner">
+            <img src="images/ecommerce.png" alt="Ecommerce logo" />
+            <h6>Ecommerce</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              condimentum sodales aliquam.
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="sec3_home_inner_flx">
-        <div class="sec3_home_img_container">
-          <img alt="Porftolio item 2" src="./images/elibrary-project.webp" />
-        </div>
-        <div class="sec3_home_inner_txt_container">
-          <h3>Elibrary App</h3>
-          <span class="proj_date">2018</span>
-          <p>Elibrary website part of a school project</p>
-          <div class="sec3_home_btn_container">
-            <button
-              class="visit_btn"
-              onclick="javascript:window.open('https://awesome-elibrary-app.herokuapp.com', '_blank');"
-            >
-              Visit Site
-            </button>
+      <div class="sec3_home" id="portfolio">
+        <h2>PORTFOLIO</h2>
+        <div class="sec3_home_inner_flx">
+          <div class="sec3_home_img_container">
+            <img alt="Porftolio item 1" src="./images/todo-project.webp" />
           </div>
-        </div>
-      </div>
-
-      <div class="sec3_home_inner_flx">
-        <div class="sec3_home_img_container">
-          <img alt="Porftolio item 3" src="./images/restaurant-project.webp" />
-        </div>
-        <div class="sec3_home_inner_txt_container">
-          <h3>Restaurace Banzai</h3>
-          <span class="proj_date">2021</span>
-          <p>Restaurant website part of a school project</p>
-          <div class="sec3_home_btn_container">
-            <button
-              class="visit_btn"
-              onclick="javascript:window.open('https://projekt-restaurace.netlify.app', '_blank');"
-            >
-              Visit Site
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="sec3_home_inner_flx">
-        <div class="sec3_home_img_container">
-          <img alt="Porftolio item 4" src="./images/cinema-project.webp" />
-        </div>
-        <div class="sec3_home_inner_txt_container">
-          <h3>Kino Vesmír</h3>
-          <span class="proj_date">2020</span>
-          <p>Cinema website part of a school project</p>
-          <div class="sec3_home_btn_container">
-            <button
-              class="visit_btn"
-              onclick="javascript:window.open('https://projekt-kino.netlify.app', '_blank');"
-            >
-              Visit Site
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="sec3_home_inner_flx">
-        <div class="sec3_home_img_container">
-          <img alt="Porftolio item 5" src="./images/article-project.webp" />
-        </div>
-        <div class="sec3_home_inner_txt_container">
-          <h3>Article App</h3>
-          <span class="proj_date">2018</span>
-          <p>Simple Article app</p>
-          <div class="sec3_home_btn_container">
-            <button
-              class="visit_btn"
-              onclick="javascript:window.open('https://kubova-uzasna-socialni-sit.herokuapp.com', '_blank');"
-            >
-              Visit Site
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="sec3_home_inner_flx">
-        <div class="sec3_home_img_container">
-          <img alt="Porftolio item 6" src="./images/ecommerce-project.webp" />
-        </div>
-        <div class="sec3_home_inner_txt_container">
-          <h3>Ecommerce App</h3>
-          <span class="proj_date">2018</span>
-          <p>Ecommerce app using Stripe</p>
-          <div class="sec3_home_btn_container">
-            <button
-              class="visit_btn"
-              onclick="javascript:window.open('https://next-amazon.herokuapp.com', '_blank');"
-            >
-              Visit Site
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="sec2_prod general_padding sec4_home" id="pricing">
-      <h2>OUR PACKAGES</h2>
-      <img
-        alt="Packages background"
-        src="images/packages-background.png"
-        id="img23"
-      />
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 sec2_prod_pkg_grid_ele">
-            <div class="sec2_prod_pkg_grid_inner" onclick="removeShadow()">
-              <h2 class="pkg_name">BASIC</h2>
-              <svg
-                class="tryangle_svg"
-                width="27"
-                height="22"
-                viewbox="0 0 27 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+          <div class="sec3_home_inner_txt_container">
+            <h3>Todo List</h3>
+            <span class="proj_date">2018</span>
+            <p>Simple Todo app</p>
+            <div class="sec3_home_btn_container">
+              <button
+                class="visit_btn"
+                onclick="javascript:window.open('https://awesome-todoapp.herokuapp.com', '_blank');"
               >
-                <path
-                  d="M13.5 22L26.0574 0.25H0.942632L13.5 22Z"
-                  fill="#21252E"
-                />
-              </svg>
-              <div class="pkg_details_container">
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="18"
-                    height="18"
-                    viewbox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
-                      fill="black"
-                    />
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="15"
-                    height="15"
-                    viewbox="0 0 15 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_33_1527)">
-                      <path
-                        d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
-                        fill="#7F7D7D"
-                      />
-                    </g>
-                    <defs>
-                      <clippath>
-                        <rect width="15" height="15" fill="white" />
-                      </clippath>
-                    </defs>
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="15"
-                    height="15"
-                    viewbox="0 0 15 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_33_1527)">
-                      <path
-                        d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
-                        fill="#7F7D7D"
-                      />
-                    </g>
-                    <defs>
-                      <clippath>
-                        <rect width="15" height="15" fill="white" />
-                      </clippath>
-                    </defs>
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="15"
-                    height="15"
-                    viewbox="0 0 15 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_33_1527)">
-                      <path
-                        d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
-                        fill="#7F7D7D"
-                      />
-                    </g>
-                    <defs>
-                      <clippath>
-                        <rect width="15" height="15" fill="white" />
-                      </clippath>
-                    </defs>
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="15"
-                    height="15"
-                    viewbox="0 0 15 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_33_1527)">
-                      <path
-                        d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
-                        fill="#7F7D7D"
-                      />
-                    </g>
-                    <defs>
-                      <clippath>
-                        <rect width="15" height="15" fill="white" />
-                      </clippath>
-                    </defs>
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
-              </div>
-              <h2 class="pkg_price_h1">$800</h2>
+                Visit Site
+              </button>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 sec2_prod_pkg_grid_ele">
+        </div>
+
+        <div class="sec3_home_inner_flx">
+          <div class="sec3_home_img_container">
+            <img alt="Porftolio item 2" src="./images/elibrary-project.webp" />
+          </div>
+          <div class="sec3_home_inner_txt_container">
+            <h3>Elibrary App</h3>
+            <span class="proj_date">2018</span>
+            <p>Elibrary website part of a school project</p>
+            <div class="sec3_home_btn_container">
+              <button
+                class="visit_btn"
+                onclick="javascript:window.open('https://awesome-elibrary-app.herokuapp.com', '_blank');"
+              >
+                Visit Site
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec3_home_inner_flx">
+          <div class="sec3_home_img_container">
+            <img
+              alt="Porftolio item 3"
+              src="./images/restaurant-project.webp"
+            />
+          </div>
+          <div class="sec3_home_inner_txt_container">
+            <h3>Restaurace Banzai</h3>
+            <span class="proj_date">2021</span>
+            <p>Restaurant website part of a school project</p>
+            <div class="sec3_home_btn_container">
+              <button
+                class="visit_btn"
+                onclick="javascript:window.open('https://projekt-restaurace.netlify.app', '_blank');"
+              >
+                Visit Site
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec3_home_inner_flx">
+          <div class="sec3_home_img_container">
+            <img alt="Porftolio item 4" src="./images/cinema-project.webp" />
+          </div>
+          <div class="sec3_home_inner_txt_container">
+            <h3>Kino Vesmír</h3>
+            <span class="proj_date">2020</span>
+            <p>Cinema website part of a school project</p>
+            <div class="sec3_home_btn_container">
+              <button
+                class="visit_btn"
+                onclick="javascript:window.open('https://projekt-kino.netlify.app', '_blank');"
+              >
+                Visit Site
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec3_home_inner_flx">
+          <div class="sec3_home_img_container">
+            <img alt="Porftolio item 5" src="./images/article-project.webp" />
+          </div>
+          <div class="sec3_home_inner_txt_container">
+            <h3>Article App</h3>
+            <span class="proj_date">2018</span>
+            <p>Simple Article app</p>
+            <div class="sec3_home_btn_container">
+              <button
+                class="visit_btn"
+                onclick="javascript:window.open('https://kubova-uzasna-socialni-sit.herokuapp.com', '_blank');"
+              >
+                Visit Site
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec3_home_inner_flx">
+          <div class="sec3_home_img_container">
+            <img alt="Porftolio item 6" src="./images/ecommerce-project.webp" />
+          </div>
+          <div class="sec3_home_inner_txt_container">
+            <h3>Ecommerce App</h3>
+            <span class="proj_date">2018</span>
+            <p>Ecommerce app using Stripe</p>
+            <div class="sec3_home_btn_container">
+              <button
+                class="visit_btn"
+                onclick="javascript:window.open('https://next-amazon.herokuapp.com', '_blank');"
+              >
+                Visit Site
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec2_prod general_padding sec4_home" id="pricing">
+        <h2>OUR PACKAGES</h2>
+        <img
+          alt="Packages background"
+          src="images/packages-background.png"
+          id="img23"
+        />
+        <div class="container">
+          <div class="row">
             <div
-              class="sec2_prod_pkg_grid_inner box_s"
-              id="box_sh"
-              onclick="removeShadow()"
+              class="col-12 col-md-6 col-lg-4 sec2_prod_pkg_grid_ele aos-init"
             >
-              <h2 class="pkg_name">STANDARD</h2>
-              <svg
-                class="tryangle_svg"
-                width="27"
-                height="22"
-                viewbox="0 0 27 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="sec2_prod_pkg_grid_inner"
+                onclick="removeShadow()"
+                data-aos="fade-up"
+                data-aos-duration="750"
               >
-                <path
-                  d="M13.5 22L26.0574 0.25H0.942632L13.5 22Z"
-                  fill="#21252E"
-                />
-              </svg>
-              <div class="pkg_details_container">
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="18"
-                    height="18"
-                    viewbox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
-                      fill="black"
-                    />
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="18"
-                    height="18"
-                    viewbox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
-                      fill="black"
-                    />
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="18"
-                    height="18"
-                    viewbox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
-                      fill="black"
-                    />
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="15"
-                    height="15"
-                    viewbox="0 0 15 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_33_1527)">
+                <h2 class="pkg_name">BASIC</h2>
+                <svg
+                  class="tryangle_svg"
+                  width="27"
+                  height="22"
+                  viewbox="0 0 27 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.5 22L26.0574 0.25H0.942632L13.5 22Z"
+                    fill="#21252E"
+                  />
+                </svg>
+                <div class="pkg_details_container">
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="18"
+                      height="18"
+                      viewbox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
-                        d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
-                        fill="#7F7D7D"
+                        d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
+                        fill="black"
                       />
-                    </g>
-                    <defs>
-                      <clippath>
-                        <rect width="15" height="15" fill="white" />
-                      </clippath>
-                    </defs>
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="15"
+                      height="15"
+                      viewbox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_33_1527)">
+                        <path
+                          d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
+                          fill="#7F7D7D"
+                        />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="15" height="15" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="15"
+                      height="15"
+                      viewbox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_33_1527)">
+                        <path
+                          d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
+                          fill="#7F7D7D"
+                        />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="15" height="15" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="15"
+                      height="15"
+                      viewbox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_33_1527)">
+                        <path
+                          d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
+                          fill="#7F7D7D"
+                        />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="15" height="15" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="15"
+                      height="15"
+                      viewbox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_33_1527)">
+                        <path
+                          d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
+                          fill="#7F7D7D"
+                        />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="15" height="15" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
                 </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="15"
-                    height="15"
-                    viewbox="0 0 15 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_33_1527)">
-                      <path
-                        d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
-                        fill="#7F7D7D"
-                      />
-                    </g>
-                    <defs>
-                      <clippath>
-                        <rect width="15" height="15" fill="white" />
-                      </clippath>
-                    </defs>
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
+                <h2 class="pkg_price_h1">$800</h2>
               </div>
-              <h2 class="pkg_price_h1">$1000</h2>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 sec2_prod_pkg_grid_ele">
-            <div class="sec2_prod_pkg_grid_inner" onclick="removeShadow()">
-              <h2 class="pkg_name">PREMIUM</h2>
-              <svg
-                class="tryangle_svg"
-                width="27"
-                height="22"
-                viewbox="0 0 27 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="col-12 col-md-6 col-lg-4 sec2_prod_pkg_grid_ele aos-init"
+            >
+              <div
+                class="sec2_prod_pkg_grid_inner box_s"
+                id="box_sh"
+                onclick="removeShadow()"
+                data-aos="fade-up"
+                data-aos-duration="750"
+                data-aos-delay="300"
               >
-                <path
-                  d="M13.5 22L26.0574 0.25H0.942632L13.5 22Z"
-                  fill="#21252E"
-                />
-              </svg>
-              <div class="pkg_details_container">
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="18"
-                    height="18"
-                    viewbox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
-                      fill="black"
-                    />
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
+                <h2 class="pkg_name">STANDARD</h2>
+                <svg
+                  class="tryangle_svg"
+                  width="27"
+                  height="22"
+                  viewbox="0 0 27 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.5 22L26.0574 0.25H0.942632L13.5 22Z"
+                    fill="#21252E"
+                  />
+                </svg>
+                <div class="pkg_details_container">
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="18"
+                      height="18"
+                      viewbox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
+                        fill="black"
+                      />
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="18"
+                      height="18"
+                      viewbox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
+                        fill="black"
+                      />
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="18"
+                      height="18"
+                      viewbox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
+                        fill="black"
+                      />
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="15"
+                      height="15"
+                      viewbox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_33_1527)">
+                        <path
+                          d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
+                          fill="#7F7D7D"
+                        />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="15" height="15" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="15"
+                      height="15"
+                      viewbox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_33_1527)">
+                        <path
+                          d="M14.8632 12.0504L10.3125 7.49978L14.8632 2.94916C14.9503 2.86089 14.9992 2.74182 14.9992 2.61775C14.9992 2.49368 14.9503 2.37461 14.8632 2.28634L12.7135 0.136657C12.67 0.0930322 12.6184 0.0584181 12.5615 0.0347997C12.5046 0.0111813 12.4436 -0.000976563 12.3821 -0.000976562C12.3205 -0.000976562 12.2595 0.0111813 12.2026 0.0347997C12.1458 0.0584181 12.0941 0.0930322 12.0507 0.136657L7.50003 4.68728L2.9494 0.136657C2.8615 0.0487795 2.74229 -0.000587107 2.61799 -0.000587107C2.4937 -0.000587107 2.37449 0.0487795 2.28659 0.136657L0.136901 2.28634C0.0932764 2.32981 0.0586623 2.38145 0.0350439 2.43833C0.0114255 2.4952 -0.000732422 2.55617 -0.000732422 2.61775C-0.000732422 2.67933 0.0114255 2.7403 0.0350439 2.79718C0.0586623 2.85405 0.0932764 2.90569 0.136901 2.94916L4.68753 7.49978L0.136901 12.0504C0.0490236 12.1383 -0.000342967 12.2575 -0.000342967 12.3818C-0.000342967 12.5061 0.0490236 12.6253 0.136901 12.7132L2.28659 14.8629C2.33005 14.9065 2.3817 14.9411 2.43857 14.9648C2.49544 14.9884 2.55641 15.0005 2.61799 15.0005C2.67957 15.0005 2.74055 14.9884 2.79742 14.9648C2.85429 14.9411 2.90594 14.9065 2.9494 14.8629L7.50003 10.3123L12.0507 14.8629C12.1386 14.9508 12.2578 15.0001 12.3821 15.0001C12.5064 15.0001 12.6256 14.9508 12.7135 14.8629L14.8632 12.7132C14.9068 12.6698 14.9414 12.6181 14.965 12.5612C14.9886 12.5044 15.0008 12.4434 15.0008 12.3818C15.0008 12.3202 14.9886 12.2593 14.965 12.2024C14.9414 12.1455 14.9068 12.0939 14.8632 12.0504Z"
+                          fill="#7F7D7D"
+                        />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="15" height="15" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
                 </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="18"
-                    height="18"
-                    viewbox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
-                      fill="black"
-                    />
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="18"
-                    height="18"
-                    viewbox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
-                      fill="black"
-                    />
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="18"
-                    height="18"
-                    viewbox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
-                      fill="black"
-                    />
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
-                <div class="prod_feature marn_t-b">
-                  <svg
-                    style="transform: unset"
-                    width="18"
-                    height="18"
-                    viewbox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
-                      fill="black"
-                    />
-                  </svg>
-                  <span>Lorem ipsum dolor sit </span>
-                </div>
+                <h2 class="pkg_price_h1">$1000</h2>
               </div>
-              <h2 class="pkg_price_h1">$1040</h2>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 sec2_prod_pkg_grid_ele aos-init"
+            >
+              <div
+                class="sec2_prod_pkg_grid_inner"
+                onclick="removeShadow()"
+                data-aos="fade-up"
+                data-aos-duration="750"
+                data-aos-delay="600"
+              >
+                <h2 class="pkg_name">PREMIUM</h2>
+                <svg
+                  class="tryangle_svg"
+                  width="27"
+                  height="22"
+                  viewbox="0 0 27 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.5 22L26.0574 0.25H0.942632L13.5 22Z"
+                    fill="#21252E"
+                  />
+                </svg>
+                <div class="pkg_details_container">
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="18"
+                      height="18"
+                      viewbox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
+                        fill="black"
+                      />
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="18"
+                      height="18"
+                      viewbox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
+                        fill="black"
+                      />
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="18"
+                      height="18"
+                      viewbox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
+                        fill="black"
+                      />
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="18"
+                      height="18"
+                      viewbox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
+                        fill="black"
+                      />
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                  <div class="prod_feature marn_t-b">
+                    <svg
+                      style="transform: unset"
+                      width="18"
+                      height="18"
+                      viewbox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.3738 1.05469L7.12617 11.9285L2.25 7.05586L0 9.30586L7.49883 16.8047L18 3.30469L15.3738 1.05469Z"
+                        fill="black"
+                      />
+                    </svg>
+                    <span>Lorem ipsum dolor sit </span>
+                  </div>
+                </div>
+                <h2 class="pkg_price_h1">$1040</h2>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="sec5_home general_padding" id="contact">
-      <h2>CONTACT US</h2>
-      <form
-        action="https://getform.io/f/7567f869-fcda-4150-a4c0-b514709ee91e"
-        method="POST"
-      >
-        <div class="w_100">
-          <label>Email</label>
-          <input type="email" name="email" placeholder="Email..." />
-        </div>
-        <div class="w_100">
-          <label>Message</label>
-          <textarea name="message" placeholder="Message..."></textarea>
-        </div>
-        <button type="submit" class="send_btn">Send</button>
-      </form>
-    </div>
-
+      <div class="sec5_home general_padding" id="contact">
+        <h2>CONTACT US</h2>
+        <form
+          action="https://getform.io/f/7567f869-fcda-4150-a4c0-b514709ee91e"
+          method="POST"
+        >
+          <div class="w_100">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email..." />
+          </div>
+          <div class="w_100">
+            <label>Message</label>
+            <textarea name="message" placeholder="Message..."></textarea>
+          </div>
+          <button type="submit" class="send_btn">Send</button>
+        </form>
+      </div>
+    </main>
     <footer class="general_padding">
       <div class="footer_icons_container">
         <!-- 
@@ -772,18 +809,28 @@
       <p class="copyright">Copyright &copy; 2022 Jakub Plecháč</p>
     </footer>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/b3825c3110.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/AOS.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
