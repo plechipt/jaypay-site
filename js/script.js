@@ -1,3 +1,10 @@
+// Hide id after link redirect
+window.addEventListener(
+  "hashchange",
+  () => window.history.pushState({}, "", "/"),
+  {}
+);
+
 // Sidebar
 const openNav = () => {
   document.getElementById("mySidebar").style.left = "0px";
