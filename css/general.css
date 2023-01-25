@@ -208,7 +208,12 @@ h6 {
   align-items: center;
 }
 
+.mobile_logo_container {
+  padding-left: 1em;
+}
+
 .openbtn {
+  padding-right: 0.5em;
   font-size: 30px;
   cursor: pointer;
   background: transparent !important;

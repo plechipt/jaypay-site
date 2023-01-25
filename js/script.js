@@ -1,4 +1,5 @@
 const sideBarItems = document.querySelectorAll("#mySidebar a");
+const openBtn = document.querySelector(".openbtn");
 
 // Hide id after link redirect
 window.addEventListener(
@@ -44,14 +45,17 @@ const closeNav = () => {
   document.getElementById("sidebar_container_blur_bg").style.right = "-105vw";
 };
 
-const handleMousePos = (event, target) => {
+const handleMousePos = (event) => {
+  const isNotOpenButton = !event.target.classList.contains("openbtn");
   const mouseClickWidth = event.clientX;
-  if (mouseClickWidth >= 280) {
+
+  if (mouseClickWidth >= 280 && isNotOpenButton) {
     closeNav();
   }
 };
 
 document.addEventListener("click", handleMousePos);
+openBtn.addEventListener("click", openNav);
 sideBarItems.forEach((item) => {
   item.addEventListener("click", closeNav);
 });
