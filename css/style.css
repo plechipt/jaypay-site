@@ -85,6 +85,10 @@ html {
   text-decoration: none;
 }
 
+.sec2_home {
+  margin-top: 60px;
+}
+
 .sec2_home h2 {
   text-align: center;
   font-weight: bold;

@@ -1,3 +1,5 @@
+const sideBarItems = document.querySelectorAll("#mySidebar a");
+
 // Hide id after link redirect
 window.addEventListener(
   "hashchange",
@@ -42,15 +44,17 @@ const closeNav = () => {
   document.getElementById("sidebar_container_blur_bg").style.right = "-105vw";
 };
 
-const handleMousePos = (event) => {
+const handleMousePos = (event, target) => {
   const mouseClickWidth = event.clientX;
   if (mouseClickWidth >= 280) {
-    document.getElementById("mySidebar").style.left = "-100vw";
-    document.getElementById("sidebar_container_blur_bg").style.right = "-105vw";
+    closeNav();
   }
 };
 
 document.addEventListener("click", handleMousePos);
+sideBarItems.forEach((item) => {
+  item.addEventListener("click", closeNav);
+});
 
 const removeShadow = () => {
   const element = document.getElementById("box_sh");

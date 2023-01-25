@@ -10,22 +10,16 @@ body {
   scroll-margin-top: 1000px;
 }
 
-/* background: linear-gradient(180deg, #FFFFFF 40.25%, #E5E5E5 100%); */
+.anchor {
+  display: block;
+  visibility: hidden;
+}
 
 #services,
 #portfolio,
 #pricing,
 #contact {
-  scroll-margin-top: 73px !important;
-}
-
-#services {
-  margin-top: 60px;
-  scroll-padding-bottom: 500px !important;
-}
-
-#pricing {
-  scroll-padding-top: 1500px !important;
+  scroll-margin-top: 60px;
 }
 
 button,
