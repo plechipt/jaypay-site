@@ -12,9 +12,6 @@
     <title>Bussines Site</title>
     <meta name="description" content="" />
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <!-- Slick -->
     <link
       rel="stylesheet"
@@ -42,6 +39,10 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/language-menu.css" />
@@ -205,17 +206,17 @@
 
     <main>
       <div class="sec1_home general_padding">
-        <div
-          class="home-container aos-element"
-          data-aos="fade-in"
-          data-aos-duration="4000"
-        >
-          <h1>WEB APP DEVELOPMENT</h1>
-          <p>
+        <div class="home-container">
+          <h1 data-aos="fade-in">WEB APP DEVELOPMENT</h1>
+          <p data-aos="fade-in">
             Specializing in custom theme development. If you're a business
             seeking a web presence or are looking to hire
           </p>
-          <button class="get_started_btn" onclick="location.href='#contact'">
+          <button
+            class="get_started_btn"
+            onclick="location.href='#contact'"
+            data-aos="fade-in"
+          >
             Contact Us
           </button>
         </div>
@@ -223,7 +224,7 @@
 
       <span class="anchor" id="services"></span>
 
-      <div class="sec2_home general_padding">
+      <div class="sec2_home general_padding" data-aos="fade-in">
         <div class="sec2_home_slider">
           <div class="sec2_home_slider_inner">
             <img src="images/audit.png" alt="Audit logo" />
@@ -266,7 +267,11 @@
       <div class="sec3_home" id="portfolio">
         <div class="sec3_home_inner_flx">
           <div class="sec3_home_img_container">
-            <img alt="Porftolio item 1" src="./images/todo-project.webp" />
+            <img
+              alt="Porftolio item 1"
+              src="./images/todo-project.webp"
+              data-aos="fade-in"
+            />
           </div>
           <div class="sec3_home_inner_txt_container">
             <h3>Todo List</h3>
@@ -285,7 +290,11 @@
 
         <div class="sec3_home_inner_flx">
           <div class="sec3_home_img_container">
-            <img alt="Porftolio item 2" src="./images/elibrary-project.webp" />
+            <img
+              alt="Porftolio item 2"
+              src="./images/elibrary-project.webp"
+              data-aos="fade-in"
+            />
           </div>
           <div class="sec3_home_inner_txt_container">
             <h3>Elibrary App</h3>
@@ -307,6 +316,7 @@
             <img
               alt="Porftolio item 3"
               src="./images/restaurant-project.webp"
+              data-aos="fade-in"
             />
           </div>
           <div class="sec3_home_inner_txt_container">
@@ -326,7 +336,11 @@
 
         <div class="sec3_home_inner_flx">
           <div class="sec3_home_img_container">
-            <img alt="Porftolio item 4" src="./images/cinema-project.webp" />
+            <img
+              alt="Porftolio item 4"
+              src="./images/cinema-project.webp"
+              data-aos="fade-in"
+            />
           </div>
           <div class="sec3_home_inner_txt_container">
             <h3>Kino Vesmír</h3>
@@ -345,7 +359,11 @@
 
         <div class="sec3_home_inner_flx">
           <div class="sec3_home_img_container">
-            <img alt="Porftolio item 5" src="./images/article-project.webp" />
+            <img
+              alt="Porftolio item 5"
+              src="./images/article-project.webp"
+              data-aos="fade-in"
+            />
           </div>
           <div class="sec3_home_inner_txt_container">
             <h3>Article App</h3>
@@ -364,7 +382,11 @@
 
         <div class="sec3_home_inner_flx">
           <div class="sec3_home_img_container">
-            <img alt="Porftolio item 6" src="./images/ecommerce-project.webp" />
+            <img
+              alt="Porftolio item 6"
+              src="./images/ecommerce-project.webp"
+              data-aos="fade-in"
+            />
           </div>
           <div class="sec3_home_inner_txt_container">
             <h3>Ecommerce App</h3>
@@ -786,11 +808,11 @@
     <footer class="general_padding">
       <div class="footer_icons_container">
         <!-- 
-          <a href="#">
-            <i class="fa-brands fa-facebook-square"></i>
-          </a>
-
-        -->
+            <a href="#">
+              <i class="fa-brands fa-facebook-square"></i>
+            </a>
+  
+          -->
         <a href="https://www.instagram.com/jakub.plechac" target="_blank">
           <i class="fa-brands fa-instagram"></i>
         </a>
@@ -810,9 +832,6 @@
       <p class="copyright">Copyright &copy; 2022 Jakub Plecháč</p>
     </footer>
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -830,6 +849,9 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script src="js/AOS.js"></script>
     <script src="js/script.js"></script>
