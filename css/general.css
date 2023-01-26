@@ -217,14 +217,18 @@ h6 {
   padding-left: 1em;
 }
 
+.main-logo,
+.openbtn {
+  font-size: 30px;
+}
+
 .openbtn {
   padding-right: 0.5em;
-  font-size: 30px;
   cursor: pointer;
   background: transparent !important;
+  border: none;
   filter: invert(13%) sepia(11%) saturate(596%) hue-rotate(169deg)
     brightness(95%) contrast(95%);
-  border: none;
 }
 
 /***********************************************************************************************************/
