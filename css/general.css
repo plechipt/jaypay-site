@@ -222,7 +222,8 @@ h6 {
   font-size: 30px;
   cursor: pointer;
   background: transparent !important;
-  color: #21252e;
+  filter: invert(13%) sepia(11%) saturate(596%) hue-rotate(169deg)
+    brightness(95%) contrast(95%);
   border: none;
 }
 

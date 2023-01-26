@@ -430,28 +430,27 @@ footer {
 }
 
 .copyright,
-.footer_icons_container a i {
+.footer_icons_container img {
   font-size: 2em;
-  color: white !important;
-  transition: 0.4s;
+  cursor: pointer;
+  filter: invert(95%) sepia(5%) saturate(0%) hue-rotate(303deg) brightness(104%)
+    contrast(105%);
+  transition: 0.15s;
 }
 
-.footer_icons_container a i:hover {
-  color: black !important;
+.footer_icons_container img {
+  margin-right: 20px;
+  width: 33px;
 }
 
-.footer_icons_container {
-  display: flex;
-}
-
-.footer_icons_container a i {
-  margin-right: 27px;
-  width: 24px;
+.footer_icons_container img:hover {
+  filter: invert(0%) sepia(100%) saturate(7465%) hue-rotate(20deg)
+    brightness(96%) contrast(103%);
 }
 
 .copyright {
   margin-bottom: 0px;
-  font-size: 15px;
+  font-size: 16px;
   color: black;
 }
 
