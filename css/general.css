@@ -201,6 +201,11 @@ h6 {
 
 /*********************************************************MOBILE HEADER**************************************************/
 
+.mobile_header,
+.desktop_header {
+  transition: transform 1s ease-out !important;
+}
+
 .mobile_header {
   display: none;
   padding-top: 15px;

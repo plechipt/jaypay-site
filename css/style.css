@@ -431,15 +431,14 @@ footer {
 
 .copyright,
 .footer_icons_container img {
-  font-size: 2em;
-  cursor: pointer;
   filter: invert(95%) sepia(5%) saturate(0%) hue-rotate(303deg) brightness(104%)
     contrast(105%);
   transition: 0.15s;
 }
 
 .footer_icons_container img {
-  margin-right: 20px;
+  cursor: pointer;
+  margin-right: 15px;
   width: 33px;
 }
 
