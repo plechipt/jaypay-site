@@ -122,22 +122,21 @@ html {
   font-size: 15px;
 }
 
-.sec2_home_slider .fa-chevron-left {
+.previous-arrow,
+.next-arrow {
   position: absolute;
-  left: 0px;
-  top: 45%;
-  font-size: 28px;
+  top: 40%;
+  height: 30px;
   cursor: pointer;
   z-index: 2;
 }
 
-.sec2_home_slider .fa-chevron-right {
-  position: absolute;
+.previous-arrow {
+  left: 0px;
+}
+
+.next-arrow {
   right: 0px;
-  top: 45%;
-  font-size: 28px;
-  cursor: pointer;
-  z-index: 2;
 }
 
 .sec3_home {

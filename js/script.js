@@ -74,8 +74,10 @@ $(".sec2_home_slider").slick({
   autoplay: true,
   autoplaySpeed: 4000,
   speed: 750,
-  prevArrow: '<i class="fa-solid fa-chevron-left"></i>',
-  nextArrow: '<i class="fa-solid fa-chevron-right"></i>',
+  prevArrow:
+    '<img class="previous-arrow" src="icons/chevron-left-solid.svg" alt="Previous arrow" />',
+  nextArrow:
+    '<img class="next-arrow" src="icons/chevron-right-solid.svg" alt="Next arrow" />',
   responsive: [
     {
       breakpoint: 1024,
