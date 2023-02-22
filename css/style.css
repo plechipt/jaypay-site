@@ -85,6 +85,10 @@ html {
   text-decoration: none;
 }
 
+.slide-description {
+  max-height: 10px !important;
+}
+
 .sec2_home {
   margin-top: 60px;
 }
@@ -134,10 +138,12 @@ html {
 }
 
 .previous-arrow {
+  padding-left: 20px;
   left: 0px;
 }
 
 .next-arrow {
+  padding-right: 20px;
   right: 0px;
 }
 
@@ -456,11 +462,14 @@ footer {
   color: black;
 }
 
+.glide {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 1700px) {
   .glide {
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .general_padding {
     padding-left: 22%;

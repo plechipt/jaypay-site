@@ -5,11 +5,17 @@ new Glide(".glide", {
   animationDuration: 1500,
   autoplay: 5000,
   hoverpause: true,
-  gap: 20,
-  peek: 50,
+  gap: 10,
+  peek: 30,
   breakpoints: {
     1700: {
       perView: 3,
+    },
+    950: {
+      perView: 2,
+    },
+    550: {
+      perView: 1,
     },
   },
 }).mount();
