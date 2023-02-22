@@ -14,30 +14,6 @@
     <title>Jay Pay</title>
     <meta name="description" content="" />
 
-    <!-- Font Awesome -->
-    <!-- 
-      <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-      />
-    -->
-
-    <!-- Slick -->
-    <!-- 
-    -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-    />
-
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -267,116 +243,75 @@
 
       <span class="anchor" id="services"></span>
 
-      <!-- HTML for the carousel -->
-      <div class="glide sec2_home">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <!-- First slide -->
-            <li class="glide__slide sec2_home_slider_inner">
-              <img src="images/audit.png" alt="Audit logo" />
-              <div class="slide-content">
-                <h2>Website audits</h2>
-                <div class="slide-description">
+      <section>
+        <div class="glide sec2_home" data-aos="fade-in">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <!-- First slide -->
+              <li class="glide__slide sec2_home_slider_inner">
+                <img src="images/audit.png" alt="Audit logo" />
+                <div class="slide-content">
+                  <h2>Website audits</h2>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur condimentum sodales aliquam.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- Second slide -->
+              <li class="glide__slide sec2_home_slider_inner">
+                <img src="images/content.png" alt="Content Management logo" />
+                <div class="slide-content">
+                  <h2>Content Management</h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur condimentum sodales aliquam.
                   </p>
                 </div>
-              </div>
-            </li>
-            <!-- Second slide -->
-            <li class="glide__slide sec2_home_slider_inner">
-              <img src="images/content.png" alt="Content Management logo" />
-              <div class="slide-content">
-                <h2>Content Management</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur condimentum sodales aliquam.
-                </p>
-              </div>
-            </li>
-            <!-- Third slide -->
-            <li class="glide__slide sec2_home_slider_inner">
-              <img
-                src="images/design-and-dev.png"
-                alt="Design & Developemnt logo"
-              />
-              <div class="slide-content">
-                <h2>Design & Developemnt</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur condimentum sodales aliquam.
-                </p>
-              </div>
-            </li>
-            <!-- Fourth slides -->
-            <li class="glide__slide sec2_home_slider_inner">
-              <img src="images/ecommerce.png" alt="Ecommerce logo" />
-              <div class="slide-content">
-                <h2>Ecommerce</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur condimentum sodales aliquam.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- Arrow icons for navigation -->
-        <div class="glide__arrows" data-glide-el="controls">
-          <img
-            class="previous-arrow"
-            data-glide-dir="<"
-            src="icons/chevron-left-solid.svg"
-            alt="Audit logo"
-          />
-          <img
-            class="next-arrow"
-            data-glide-dir=">"
-            src="icons/chevron-right-solid.svg"
-            alt="Audit logo"
-          />
-        </div>
-      </div>
-
-      <section>
-        <div class="sec2_home general_padding" data-aos="fade-in">
-          <div class="sec2_home_slider">
-            <div class="sec2_home_slider_inner">
-              <img src="images/audit.png" alt="Audit logo" />
-              <h2>Website audits</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur condimentum sodales aliquam.
-              </p>
-            </div>
-            <div class="sec2_home_slider_inner">
-              <img src="images/content.png" alt="Content Management logo" />
-              <h2>Content Management</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur condimentum sodales aliquam.
-              </p>
-            </div>
-            <div class="sec2_home_slider_inner">
-              <img
-                src="images/design-and-dev.png"
-                alt="Design & Developemnt logo"
-              />
-              <h2>Design & Developemnt</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur condimentum sodales aliquam.
-              </p>
-            </div>
-            <div class="sec2_home_slider_inner">
-              <img src="images/ecommerce.png" alt="Ecommerce logo" />
-              <h2>Ecommerce</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur condimentum sodales aliquam.
-              </p>
-            </div>
+              </li>
+              <!-- Third slide -->
+              <li class="glide__slide sec2_home_slider_inner">
+                <img
+                  src="images/design-and-dev.png"
+                  alt="Design & Developemnt logo"
+                />
+                <div class="slide-content">
+                  <h2>Design & Developemnt</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur condimentum sodales aliquam.
+                  </p>
+                </div>
+              </li>
+              <!-- Fourth slides -->
+              <li class="glide__slide sec2_home_slider_inner">
+                <img src="images/ecommerce.png" alt="Ecommerce logo" />
+                <div class="slide-content">
+                  <h2>Ecommerce</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur condimentum sodales aliquam.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Arrow icons for navigation -->
+          <div class="glide__arrows" data-glide-el="controls">
+            <img
+              class="previous-arrow"
+              data-glide-dir="<"
+              src="icons/chevron-left-solid.svg"
+              alt="Audit logo"
+            />
+            <img
+              class="next-arrow"
+              data-glide-dir=">"
+              src="icons/chevron-right-solid.svg"
+              alt="Audit logo"
+            />
           </div>
         </div>
       </section>
@@ -973,11 +908,6 @@
       </div>
       <p class="copyright">Copyright &copy; 2022 Jakub Plecháč</p>
     </footer>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
