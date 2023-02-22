@@ -52,8 +52,7 @@
     <!-- Glide.css -->
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css"
     />
 
     <!-- Imports -->
@@ -267,6 +266,67 @@
       </section>
 
       <span class="anchor" id="services"></span>
+
+      <!-- HTML for the carousel -->
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <!-- First slide -->
+            <li class="glide__slide sec2_home_slider_inner">
+              <img src="images/audit.png" />
+              <div class="slide-content">
+                <h2>Website audits</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur condimentum sodales aliquam.
+                </p>
+              </div>
+            </li>
+            <!-- Second slide -->
+            <li class="glide__slide sec2_home_slider_inner">
+              <img src="images/content.png" />
+              <div class="slide-content">
+                <h2>Content Management</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur condimentum sodales aliquam.
+                </p>
+              </div>
+            </li>
+            <!-- Third slide -->
+            <li class="glide__slide sec2_home_slider_inner">
+              <img src="images/design-and-dev.png" />
+              <div class="slide-content">
+                <h2>Design & Developemnt</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur condimentum sodales aliquam.
+                </p>
+              </div>
+            </li>
+            <!-- Fourth slides -->
+            <li class="glide__slide sec2_home_slider_inner">
+              <img src="images/ecommerce.png" />
+              <div class="slide-content">
+                <h2>Ecommerce</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur condimentum sodales aliquam.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Arrow icons for navigation -->
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            &#171;
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            &#187;
+          </button>
+        </div>
+      </div>
 
       <section>
         <div class="sec2_home general_padding" data-aos="fade-in">
@@ -912,8 +972,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- Glide.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
 
     <script src="js/AOS.js"></script>
     <script src="js/glide.js"></script>
