@@ -69,12 +69,12 @@
 }
 
 .cz {
-  background-image: url("../images/cz.svg");
+  background-image: url("../icons/cz.svg");
   vertical-align: middle;
 }
 
 .us:before {
-  background-image: url("../images/us.svg");
+  background-image: url("../icons/us.svg");
   vertical-align: middle;
 }
 
