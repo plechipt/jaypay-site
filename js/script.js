@@ -66,3 +66,14 @@ const removeShadow = () => {
   const element = document.getElementById("box_sh");
   element.classList.remove("box_s");
 };
+
+// Clear form after submit
+const submitForm = document.getElementById("submit-form");
+
+submitForm.addEventListener("submit", (e) => {
+  const emailInput = document.getElementById("email-input");
+  const messageInput = document.getElementById("message-input");
+
+  emailInput.value = "";
+  messageInput.value = "";
+});
