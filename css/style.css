@@ -1,5 +1,5 @@
 :root {
-  --main-blue: #0749f0;
+  --main-blue: #1976d2;
 }
 
 html {
@@ -431,7 +431,7 @@ footer {
   align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: #3195ff;
+  background-color: var(--main-blue);
 }
 
 .copyright,

@@ -1,5 +1,6 @@
 :root {
-  --main-blue: #0749f0;
+  --main-blue: #1976d2;
+  --hover-color: #115293;
 }
 
 body {
@@ -30,7 +31,7 @@ textarea {
 }
 
 button:hover {
-  background-color: darkblue;
+  background-color: var(--hover-color);
 }
 
 .get_start_btn a {
@@ -38,7 +39,7 @@ button:hover {
 }
 
 .visit_btn:hover {
-  background-color: darkblue;
+  background-color: var(--hover-color);
 }
 
 .send_btn:hover,
@@ -181,7 +182,7 @@ h6 {
   padding: 8px 5px;
   font-size: 13px;
   border-radius: 9px;
-  background-color: #0749f0;
+  background-color: var(--main-blue);
   border: none;
   color: white;
 }
