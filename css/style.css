@@ -463,17 +463,16 @@ footer {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1700px) {
+}
+
 @media screen and (min-width: 1000px) {
   .glide {
     max-width: 1000px;
   }
-  .general_padding {
-    padding-left: 22%;
-    padding-right: 22%;
-  }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1050px) {
   .general_padding {
     padding-left: 30px;
     padding-right: 30px;
@@ -511,7 +510,7 @@ footer {
   }
 
   .sec2_prod_pkg_grid_ele {
-    padding: 15px 15px;
+    padding: 30px 150px;
   }
   .w_49,
   .w_100 {
@@ -528,6 +527,18 @@ footer {
   .footer_icons_container img {
     margin-left: 10px;
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sec2_prod_pkg_grid_ele {
+    padding: 30px 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sec2_prod_pkg_grid_ele {
+    padding: 30px 15px;
   }
 }
 
