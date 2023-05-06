@@ -196,7 +196,6 @@ html {
 }
 
 .visit_btn {
-  margin-right: 15px;
   padding: 10px;
   width: 150px;
   background: var(--main-blue);
@@ -510,6 +509,7 @@ footer {
   .sec3_home_inner_flx {
     padding: 30px 15px;
   }
+
   .sec2_prod_pkg_grid_ele {
     padding: 15px 15px;
   }
