@@ -77,3 +77,12 @@ submitForm.addEventListener("submit", (e) => {
   emailInput.value = "";
   messageInput.value = "";
 });
+
+// Navbar toggle between fixed and sticky
+document.addEventListener("scroll", () => {
+  const allHeaders = document.querySelectorAll("header");
+
+  allHeaders.forEach((header) => {
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
+});

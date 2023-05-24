@@ -62,24 +62,66 @@ h6 {
 }
 
 .header_section {
+  padding: 15px 45px;
+}
+
+.mobile_nav {
   display: flex;
   justify-content: space-between;
+  padding: 1px 1px !important;
+}
+
+.header_section {
+  display: flex;
   align-items: center;
-  padding: 5px 45px 5px 45px;
+  justify-content: space-between;
   width: 100%;
   margin: auto;
-  background-color: white;
 }
 
 .desktop_header,
 .mobile_header {
-  background-color: white;
-  position: -webkit-sticky !important;
-  position: sticky !important;
-  top: 0 !important;
-  padding: 0 !important;
+  top: 0;
+  left: 0;
+  position: fixed;
   width: 100%;
   z-index: 3;
+}
+
+.desktop_header,
+.mobile_header,
+.header_section {
+  transition: 0.6s;
+}
+
+.link_container nav a {
+  color: white;
+}
+
+.icons_container,
+.get_start_btn,
+.lang-menu {
+  transition: 0s;
+}
+
+.icons_container {
+  visibility: hidden;
+}
+
+header.sticky {
+  .header_section {
+    padding: 5px 45px;
+  }
+  background: #fff;
+  .link_container nav a {
+    color: black;
+  }
+  .nav_li a:hover::after {
+    background-color: black;
+  }
+  .icons_container {
+    visibility: visible;
+  }
 }
 
 /*<!-------------------------------------------------Logo------------------------------------------------------->*/
@@ -128,11 +170,11 @@ h6 {
   position: absolute;
   bottom: -5px;
   content: "";
-  background-color: #21252e;
+  background-color: #fff;
   height: 3px;
   width: 100%;
   display: block;
-  animation: nav_after_animation 0.4s;
+  animation: nav_after_animation 0.3s;
   border-radius: 10px !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -207,8 +249,6 @@ h6 {
 
 .mobile_header {
   display: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .mobile_nav {
@@ -359,24 +399,12 @@ body::-webkit-scrollbar-thumb {
 /*<!--------------------------------------------------------------------------------------------------------------->*/
 
 @media screen and (max-width: 1200px) {
-  .header_section {
-    padding: 5px 15px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
   .get_start_btn {
     display: none;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .nav_li {
-    padding: 0px 10px 0px 10px;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .send_btn {
     margin: auto;
   }
