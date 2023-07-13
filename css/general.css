@@ -68,7 +68,7 @@ h6 {
 .mobile_nav {
   display: flex;
   justify-content: space-between;
-  padding: 1px 1px !important;
+  padding: 10px 0px 10px 0px;
 }
 
 .header_section {
@@ -90,7 +90,8 @@ h6 {
 
 .desktop_header,
 .mobile_header,
-.header_section {
+.header_section,
+.mobile_nav {
   transition: 0.6s;
 }
 
@@ -108,7 +109,15 @@ h6 {
   visibility: hidden;
 }
 
+.openbtn {
+  color: white;
+  background-color: white;
+}
+
 header.sticky {
+  .mobile_nav {
+    padding: 1px 0px 1px 0px;
+  }
   .header_section {
     padding: 5px 45px;
   }
@@ -249,13 +258,6 @@ header.sticky {
 
 .mobile_header {
   display: none;
-}
-
-.mobile_nav {
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .mobile_logo_container {

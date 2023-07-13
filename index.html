@@ -135,7 +135,7 @@
               <defs>
                 <style>
                   .cls-1 {
-                    fill: #0749f0;
+                    fill: #083ec7;
                   }
                 </style>
               </defs>
@@ -206,7 +206,7 @@
     <!-- Mobile Header -->
 
     <header class="mobile_header">
-      <div class="container mobile_nav">
+      <div class="mobile_nav">
         <div class="mobile_logo_container">
           <a aria-label="Get to the top" href="#top">
             <svg
@@ -237,14 +237,44 @@
           </a>
         </div>
         <div class="collapse_btn_containter">
-          <img
-            height="50"
-            width="50"
+          <!--
+            <img
+              height="50"
+              width="50"
+              onclick="openNav()"
+              class="openbtn"
+              src="/icons/hamburger-menu.svg"
+              alt="Menu icon"
+            />
+          -->
+          <svg
             onclick="openNav()"
             class="openbtn"
-            src="/icons/hamburger-menu.svg"
-            alt="Menu icon"
-          />
+            height="55px"
+            width="55px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 18L20 18"
+              stroke="white"
+              stroke-opacity="1"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 12L20 12"
+              stroke="#ffffff"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 6L20 6"
+              stroke="#ffffff"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
         </div>
       </div>
     </header>
