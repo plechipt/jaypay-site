@@ -277,10 +277,12 @@ header.sticky {
 
 /*<!-------------------------------------------------SIDEBAR------------------------------------------------------->*/
 
+.closeButton {
+  margin-left: auto;
+}
+
 .sidebar_logo {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0% 10px 0% 10px;
 }
 
@@ -288,11 +290,21 @@ header.sticky {
   width: 70%;
 }
 
+.sidebar_logo {
+  align-self: auto;
+  flex: 1;
+}
+
+.sidebar_logo a {
+  right: 50%;
+}
+
 .sidebar {
   height: 100%;
-  width: 290px;
+  width: 100%;
+  /*width: 290px;*/
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   top: 0;
   left: -100vw;
   background-color: white;
@@ -303,7 +315,7 @@ header.sticky {
   overflow-x: hidden;
   transition: 0.4s ease-in-out;
   padding-top: 18px;
-  border-radius: 0px 15px 15px 0px;
+  /*border-radius: 0px 15px 15px 0px;*/
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   /*    font-family: 'Poppins', sans-serif;*/

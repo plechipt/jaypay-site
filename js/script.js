@@ -43,6 +43,7 @@ const openNav = () => {
 
 const closeNav = () => {
   document.getElementById("mySidebar").style.left = "-100vw";
+  document.getElementById("sidebar_container_blur_bg").style.right = "-105vw";
 };
 
 const handleMousePos = (event) => {
