@@ -58,13 +58,13 @@ const handleMousePos = (event) => {
 };
 
 document.addEventListener("click", handleMousePos);
-sideBarItems.forEach((item) => {
-  item.addEventListener("click", closeNav);
-});
 */
 
 openBtn.addEventListener("click", openNav);
 closeButton.addEventListener("click", closeNav);
+sideBarItems.forEach((item) => {
+  item.addEventListener("click", closeNav);
+});
 
 const removeShadow = () => {
   const element = document.getElementById("box_sh");
