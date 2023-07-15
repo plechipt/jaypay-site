@@ -1,5 +1,6 @@
 const sideBarItems = document.querySelectorAll("#mySidebar a");
 const openBtn = document.querySelector(".openbtn");
+const closeButton = document.querySelector(".closeButton");
 
 // AOS
 AOS.init({
@@ -45,6 +46,7 @@ const closeNav = () => {
   document.getElementById("mySidebar").style.left = "-100vw";
   document.getElementById("sidebar_container_blur_bg").style.right = "-105vw";
 };
+/*
 
 const handleMousePos = (event) => {
   const isNotOpenButton = !event.target.classList.contains("openbtn");
@@ -56,10 +58,13 @@ const handleMousePos = (event) => {
 };
 
 document.addEventListener("click", handleMousePos);
-openBtn.addEventListener("click", openNav);
 sideBarItems.forEach((item) => {
   item.addEventListener("click", closeNav);
 });
+*/
+
+openBtn.addEventListener("click", openNav);
+closeButton.addEventListener("click", closeNav);
 
 const removeShadow = () => {
   const element = document.getElementById("box_sh");

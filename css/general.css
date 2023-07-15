@@ -125,6 +125,9 @@ header.sticky {
   .link_container nav a {
     color: black;
   }
+  .openbtn path {
+    stroke: black;
+  }
   .nav_li a:hover::after {
     background-color: black;
   }
@@ -269,8 +272,6 @@ header.sticky {
   cursor: pointer;
   background: transparent !important;
   border: none;
-  filter: invert(13%) sepia(11%) saturate(596%) hue-rotate(169deg)
-    brightness(95%) contrast(95%);
 }
 
 /***********************************************************************************************************/
@@ -283,7 +284,8 @@ header.sticky {
 
 .sidebar_logo {
   display: flex;
-  margin: 0% 10px 0% 10px;
+  margin: 0% 10px 0% 20px;
+  justify-content: center;
 }
 
 .sidebar_logo img {
