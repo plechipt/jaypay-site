@@ -39,10 +39,13 @@ window.addEventListener(
 
 // Sidebar
 const openNav = () => {
+  document.body.classList.add("stop-scrolling");
   document.getElementById("mySidebar").style.left = "0px";
 };
 
 const closeNav = () => {
+  document.body.classList.remove("stop-scrolling");
+
   document.getElementById("mySidebar").style.left = "-100vw";
   document.getElementById("sidebar_container_blur_bg").style.right = "-105vw";
 };

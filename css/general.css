@@ -305,6 +305,7 @@ header.sticky {
   height: 100%;
   width: 100%;
   /*width: 290px;*/
+  overflow-x: hidden;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -389,6 +390,11 @@ header.sticky {
   opacity: 1;
   backdrop-filter: blur(1.5px);
   transition: 0.3s;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 /*<!----------------------------------Custom Scrollbar----------------------------------------->*/
