@@ -2,6 +2,8 @@ const sideBarItems = document.querySelectorAll("#mySidebar a");
 const openBtn = document.querySelector(".openbtn");
 const closeButton = document.querySelector(".closeButton");
 
+document.cookie = "myCookie=myValue; samesite=strict"; // Specify the SameSite attribute as "strict"
+
 // AOS
 AOS.init({
   once: true,
