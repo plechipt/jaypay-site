@@ -423,6 +423,17 @@ html {
   color: black;
 }
 
+.gdpr_condition {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.gdpr_text {
+  margin-left: 0.5em;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
