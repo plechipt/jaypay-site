@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "name": "General Information",
+      "faqs": [
+        {
+          "question": "What services do you offer?",
+          "answer": "We offer a range of services, including website development, web application development, and AI automated solutions. Each service is tailored to meet your specific needs."
+        },
+        {
+          "question": "How does the web development process work?",
+          "answer": "The web development process typically involves several steps, including requirement gathering, design, development, testing, and deployment. We work closely with our clients to ensure their unique needs are met throughout the process."
+        },
+        {
+          "question": "What is the difference between a website and a web app?",
+          "answer": "A website is typically a collection of web pages with static or dynamic content, while a web app is a more interactive and functional application that can perform specific tasks or functions. We can help you decide which one is best for your project."
+        }
+      ]
+    },
+    {
+      "name": "Web Development Services",
+      "faqs": [
+        {
+          "question": "Do you offer e-commerce website development?",
+          "answer": "Yes, we specialize in e-commerce website development. We can create online stores with features like a product catalog, shopping cart, and secure payment processing."
+        },
+        {
+          "question": "Can you provide maintenance and support after website development?",
+          "answer": "Certainly! We offer maintenance and support services to ensure your website or application stays up to date and secure. We're here to assist you even after the project is completed."
+        }
+      ]
+    },
+    {
+      "name": "AI Solutions",
+      "faqs": [
+        {
+          "question": "Can you explain AI automated solutions?",
+          "answer": "AI automated solutions leverage artificial intelligence to perform tasks or processes autonomously. This can include chatbots, recommendation engines, and data analysis. We can develop AI solutions that enhance your business processes."
+        },
+        {
+          "question": "What is your experience in AI and machine learning?",
+          "answer": "Our team has extensive experience in AI and machine learning, having worked on various projects involving natural language processing, image recognition, and predictive analytics."
+        }
+      ]
+    },
+    {
+      "name": "Technical Details",
+      "faqs": [
+        {
+          "question": "What technologies do you use for web development?",
+          "answer": "We use a variety of technologies, including HTML, CSS, JavaScript, and popular frameworks like React, Angular, or Vue.js, depending on the project requirements. For web apps and AI solutions, we also use back-end technologies like Node.js, Python, or Ruby on Rails."
+        },
+        {
+          "question": "Can you integrate third-party services into web apps?",
+          "answer": "Yes, we can integrate third-party services and APIs into your web applications to add features like payment gateways, social media sharing, or data analysis."
+        }
+      ]
+    }
+  ]
+}
