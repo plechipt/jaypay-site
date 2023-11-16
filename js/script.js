@@ -80,9 +80,11 @@ const removeShadow = () => {
 const submitForm = document.getElementById("submit-form");
 
 submitForm.addEventListener("submit", (e) => {
+  const nameInput = document.getElementById("name-input");
   const emailInput = document.getElementById("email-input");
   const messageInput = document.getElementById("message-input");
 
+  nameInput.value = "";
   emailInput.value = "";
   messageInput.value = "";
 });
