@@ -4,6 +4,8 @@ const closeButton = document.querySelector(".closeButton");
 
 document.cookie = "myCookie=myValue; samesite=strict"; // Specify the SameSite attribute as "strict"
 
+const apiURL = "https://jaypay-server.vercel.app/api";
+
 // AOS
 AOS.init({
   once: true,
@@ -79,14 +81,30 @@ const removeShadow = () => {
 // Clear form after submit
 const submitForm = document.getElementById("submit-form");
 
-submitForm.addEventListener("submit", (e) => {
+submitForm.addEventListener("submit", async (e) => {
   const nameInput = document.getElementById("name-input");
   const emailInput = document.getElementById("email-input");
   const messageInput = document.getElementById("message-input");
 
+  const name = nameInput.value;
+  const email = emailInput.value;
+
+  /*
   nameInput.value = "";
   emailInput.value = "";
   messageInput.value = "";
+  */
+
+  const response = await fetch(`${apiURL}/send-transactional-email`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ name, email }),
+  });
+
+  const data = await response.json();
 });
 
 // Navbar toggle between fixed and sticky
