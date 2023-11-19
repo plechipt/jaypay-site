@@ -79,6 +79,15 @@ const removeShadow = () => {
   element.classList.remove("box_s");
 };
 
+// Navbar toggle between fixed and sticky
+document.addEventListener("scroll", () => {
+  const allHeaders = document.querySelectorAll("header");
+
+  allHeaders.forEach((header) => {
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
+});
+
 // Clear form after submit
 const submitForm = document.getElementById("submit-form");
 
@@ -89,6 +98,7 @@ submitForm.addEventListener("submit", async (e) => {
 
   const name = nameInput.value;
   const email = emailInput.value;
+  const message = message.value;
 
   /*
   nameInput.value = "";
@@ -96,40 +106,14 @@ submitForm.addEventListener("submit", async (e) => {
   messageInput.value = "";
   */
 
-  const response = await fetch(`${apiURL}/send-transactional-email`, {
+  const response = await fetch(`${apiURL}/submit-website-form`, {
     method: "POST",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ name, email }),
+    body: JSON.stringify({ name, email, message }),
   });
 
   const data = await response.json();
 });
-
-// Navbar toggle between fixed and sticky
-document.addEventListener("scroll", () => {
-  const allHeaders = document.querySelectorAll("header");
-
-  allHeaders.forEach((header) => {
-    header.classList.toggle("sticky", window.scrollY > 0);
-  });
-});
-
-const fetchData = () => {
-  if (!fetchExecuted) {
-    fetch("/api/getApiKey")
-      .then((response) => response.json())
-      .then((data) => {
-        // Process the fetched data
-        const { apiKey } = data;
-        document.getElementById("api-key").value = apiKey;
-        fetchExecuted = true;
-      })
-      .catch((error) => console.error("Error fetching data:", error));
-  }
-};
-fetchData();
-
-console.log(fetchExecuted);
