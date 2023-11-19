@@ -5,7 +5,7 @@ const closeButton = document.querySelector(".closeButton");
 document.cookie = "myCookie=myValue; samesite=strict"; // Specify the SameSite attribute as "strict"
 
 const apiURL = "https://jaypay-server.vercel.app/api";
-const fetchExecuted = false;
+let fetchExecuted = false;
 
 // AOS
 AOS.init({
