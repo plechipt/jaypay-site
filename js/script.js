@@ -116,4 +116,5 @@ submitForm.addEventListener("submit", async (e) => {
   });
 
   const data = await response.json();
+  window.location.href = "https://web3forms.com/success";
 });
