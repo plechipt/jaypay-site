@@ -117,19 +117,19 @@ document.addEventListener("scroll", () => {
   });
 });
 
-function fetchData() {
+const fetchData = () => {
   if (!fetchExecuted) {
     fetch("/api/getApiKey")
       .then((response) => response.json())
       .then((data) => {
         // Process the fetched data
-        console.log(data);
-        document.getElementById("api-key").value = data;
+        const { apiKey } = data;
+        document.getElementById("api-key").value = apiKey;
         fetchExecuted = true;
       })
       .catch((error) => console.error("Error fetching data:", error));
   }
-}
+};
 fetchData();
 
 console.log(fetchExecuted);
