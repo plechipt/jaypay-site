@@ -5,6 +5,7 @@ const closeButton = document.querySelector(".closeButton");
 document.cookie = "myCookie=myValue; samesite=strict"; // Specify the SameSite attribute as "strict"
 
 const apiURL = "https://jaypay-server.vercel.app/api";
+const fetchExecuted = false;
 
 // AOS
 AOS.init({
@@ -116,16 +117,19 @@ document.addEventListener("scroll", () => {
   });
 });
 
-fetch("/api/getApiKey")
-  .then((response) => response.json())
-  .then((data) => {
-    const apiKey = data.apiKey;
-    console.log("Received API Key:", apiKey);
+function fetchData() {
+  if (!fetchExecuted) {
+    fetch("/api/getApiKey")
+      .then((response) => response.json())
+      .then((data) => {
+        // Process the fetched data
+        console.log(data);
+        document.getElementById("api-key").value = data;
+        fetchExecuted = true;
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }
+}
+fetchData();
 
-    // Use the API key in your application logic
-    // ...
-  })
-  .catch((error) => console.error("Error fetching API key:", error));
-
-console.log(process.env.WEBFORM_API_KEY);
-document.getElementById("api-key").value = process.env.WEBFORM_API_KEY;
+console.log(fetchExecuted);
