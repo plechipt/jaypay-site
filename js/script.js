@@ -117,5 +117,4 @@ document.addEventListener("scroll", () => {
 });
 
 console.log(process.env.WEBFORM_API_KEY);
-
 document.getElementById("api-key").value = process.env.WEBFORM_API_KEY;
