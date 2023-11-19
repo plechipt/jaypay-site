@@ -116,5 +116,16 @@ document.addEventListener("scroll", () => {
   });
 });
 
+fetch("/api/getApiKey")
+  .then((response) => response.json())
+  .then((data) => {
+    const apiKey = data.apiKey;
+    console.log("Received API Key:", apiKey);
+
+    // Use the API key in your application logic
+    // ...
+  })
+  .catch((error) => console.error("Error fetching API key:", error));
+
 console.log(process.env.WEBFORM_API_KEY);
 document.getElementById("api-key").value = process.env.WEBFORM_API_KEY;
