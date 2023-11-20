@@ -92,19 +92,22 @@ document.addEventListener("scroll", () => {
 const submitForm = document.getElementById("submit-form");
 
 submitForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
   const nameInput = document.getElementById("name-input");
   const emailInput = document.getElementById("email-input");
   const messageInput = document.getElementById("message-input");
+  const submitButton = document.getElementById("submit-button");
+
+  submitButton.disabled = true;
 
   const name = nameInput.value;
   const email = emailInput.value;
-  const message = message.value;
+  const message = messageInput.value;
 
-  /*
   nameInput.value = "";
   emailInput.value = "";
   messageInput.value = "";
-  */
 
   const response = await fetch(`${apiURL}/submit-website-form`, {
     method: "POST",
@@ -115,6 +118,9 @@ submitForm.addEventListener("submit", async (e) => {
     body: JSON.stringify({ name, email, message }),
   });
 
-  const data = await response.json();
   window.location.href = "https://web3forms.com/success";
+
+  nameInput.value = "";
+  emailInput.value = "";
+  messageInput.value = "";
 });
