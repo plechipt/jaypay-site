@@ -253,6 +253,7 @@ html {
 }
 
 .sec2_prod_pkg_grid_inner {
+  min-height: 500px;
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
@@ -293,7 +294,7 @@ html {
   margin-top: 30px;
   margin-bottom: 30px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
   padding: 30px 10px;
 }
 
@@ -304,6 +305,7 @@ html {
 
 .pkg_price_h1 {
   text-align: center;
+  display: none;
   color: black !important;
   margin-bottom: 30px;
   font-weight: bold;
