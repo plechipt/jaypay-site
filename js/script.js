@@ -27,10 +27,10 @@ new Glide(".glide", {
       perView: 3,
     },
     950: {
-      perView: 3,
+      perView: 2,
     },
     600: {
-      perView: 3,
+      perView: 1,
     },
   },
 }).mount();
