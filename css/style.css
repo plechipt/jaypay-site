@@ -555,7 +555,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 486px) {
+@media screen and (max-width: 420px) {
   footer {
     display: flex !important;
     justify-content: center !important;
